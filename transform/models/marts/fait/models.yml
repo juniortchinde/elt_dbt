@@ -1,0 +1,14 @@
+models:
+  - name: place_parking
+    description: "fait sur les places de parking"
+    columns:
+      - name: np_total
+        description: "nombre total des places en parking"
+      - name: np_pmr
+        descrption: "dont places pour Personnes à mobilité reduite (PMR)"
+      - name: np_vle
+        description: "dont places vélo électrictrive"
+      - name: th_heure
+        description: "exemple tarif horaire inférieure à une heure"
+      - name: tv_1h
+        description: "tarif voirie du secteur autour du parc inférieur à une heure "

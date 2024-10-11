@@ -1,0 +1,48 @@
+[0m11:25:36.783221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1a5289c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1a50f4f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1a50f4ebf0>]}
+
+
+============================== 11:25:36.785794 | d5fa8aac-8ea7-4a27-b923-618fd3fb7ae6 ==============================
+[0m11:25:36.785794 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:25:36.786389 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/cyrille/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:25:36.793192 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/cyrille/.dbt')}
+[0m11:25:36.793719 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:25:46.497252 [debug] [MainThread]: Starter project path: /home/cyrille/EFREI_Project/Big-data/ETL/myenv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m11:25:46.503414 [info ] [MainThread]: 
+Your new dbt project "transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:25:46.504303 [info ] [MainThread]: Setting up your profile.
+[0m11:26:05.138793 [info ] [MainThread]: Profile transform written to /home/cyrille/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m11:26:05.145328 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 26.590788, "process_user_time": 1.242589, "process_kernel_time": 0.094044, "process_mem_max_rss": "113688", "process_in_blocks": "1160", "process_out_blocks": "72"}
+[0m11:26:05.146142 [debug] [MainThread]: Command `dbt init` succeeded at 11:26:05.146019 after 26.59 seconds
+[0m11:26:05.146716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1a5289c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1a50f75c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1a520ff160>]}
+[0m11:26:05.147233 [debug] [MainThread]: Flushing usage events
+[0m11:26:05.274207 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m12:05:14.756343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d3472a00d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d346b07160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d34742b7f0>]}
+
+
+============================== 12:05:14.758917 | 211a4229-c61e-488a-a39d-adf483282268 ==============================
+[0m12:05:14.758917 [info ] [MainThread]: Running with dbt=1.8.7
+[0m12:05:14.759513 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/cyrille/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt build', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:05:14.760127 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/cyrille/EFREI_Project/Big-data/ETL/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:05:14.760938 [debug] [MainThread]: Resource report: {"command_name": "build", "command_wall_clock_time": 0.056406263, "process_user_time": 1.119821, "process_kernel_time": 0.05899, "process_mem_max_rss": "85216", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m12:05:14.761565 [debug] [MainThread]: Command `dbt build` failed at 12:05:14.761462 after 0.06 seconds
+[0m12:05:14.762000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d3472a00d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d347429db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77d347429c00>]}
+[0m12:05:14.762433 [debug] [MainThread]: Flushing usage events
+[0m12:05:14.886210 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.

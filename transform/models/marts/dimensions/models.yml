@@ -1,0 +1,36 @@
+models:
+  - name: exploit
+    description: "Expoloitant du parking"
+    columns:
+      - name: exploit_id
+        description: "Substitut de clé pour exploit "
+        data_tests:
+          - not_null
+          - unique
+
+  - name: ta_type
+    description: "Type of pricing"
+    columns:
+      - name: ta_type_id
+        description: "Substitut de clé pour ta_type"
+        data_tests:
+          - not_null
+          - unique
+
+  - name: secteur
+    description: "Secteur dans Bordeaux Métropole"
+    columns:
+      - name: secteur_id
+        description: "Substitut de clé pour secteur"
+        data_tests:
+          - not_null
+          - unique
+
+  - name: type
+    description: "Type de parking"
+    columns:
+      - name: type_id
+        description: "park id from source"
+        data_tests:
+          - not_null
+          - unique
